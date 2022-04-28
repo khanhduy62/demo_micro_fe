@@ -9,4 +9,4 @@ for (let i=0; i<3; i++) {
 
 console.log(product)
 
-console.log("log--__dirname ", __dirname)
+document.getElementById("products").innerHTML = product
