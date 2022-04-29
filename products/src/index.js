@@ -9,4 +9,4 @@ for (let i=0; i<3; i++) {
 
 console.log(product)
 
-document.getElementById("products").innerHTML = product
+document.getElementById("root-products").innerHTML = product
