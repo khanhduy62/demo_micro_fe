@@ -1,4 +1,4 @@
 import 'products/ProductsIndex';
-import 'cart/CartIndex';
+import 'cart/CartIndex'
 
-console.log('Container!');
+console.log('Container! ');
