@@ -1,11 +1,18 @@
 import faker from 'faker';
 
-const cartText = `<div>You have ${faker.random.number()} items in your cart</div>`
+const mount = el => {
+  const cartText = `<div>You have ${faker.random.number()} items in your cart</div>`
 
-document.getElementById('root-cart').innerHTML = cartText;
-
-const geElement = (value) => {
-  return `test value: ${value}`
+  el.innerHTML = cartText;
 }
 
-export { geElement }
+
+// running this file in development mode
+if (process.env.NODE_ENV === 'development') {
+  const devRoot = document.querySelector('#root-cart')
+  if (devRoot) {
+      mount(devRoot)
+  }
+}
+
+export { mount }
